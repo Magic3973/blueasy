@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "seg";
+  src: url(../font/Segoe.ttf); }
+@font-face {
+  font-family: "segl";
+  src: url(../font/Segoeuil.ttf); }
+body {
+  margin: 0;
+  /*    ****** header **********   */
+  /* ******* nav ********* */
+  /*      *********services****************      */ }
+  body h2 {
+    font-size: 30px;
+    color: white;
+    font-family: "segl";
+    padding-top: 8%; }
+  body header .container-fluid {
+    padding: 0;
+    background-image: url(../img/champs.jpg);
+    background: cover, no-repeat;
+    width: 100%;
+    height: 800px; }
+  body header h1 {
+    text-transform: uppercase;
+    font-family: "segl";
+    margin-top: 30%;
+    text-align: center; }
+  body header #titre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2;
+    font-size: 42px;
+    color: white; }
+    body header #titre .badge {
+      border-radius: 0;
+      font-size: 42px;
+      margin-top: 20px;
+      font-weight: 300; }
+      @media screen and (max-width: 640px) {
+        body header #titre .badge {
+          font-size: 28px; } }
+      @media (min-width: 640px) and (max-width: 767px) {
+        body header #titre .badge {
+          font-size: 30px; } }
+  body nav span {
+    color: #5bc6f2;
+    font-size: 30px;
+    font-weight: 700; }
+  body .navbar-brand {
+    color: white;
+    font-size: 30px;
+    font-weight: 700; }
+  body #services {
+    color: white; }
+    body #services .container-fluid {
+      background-color: #5bc6f2;
+      height: 405px;
+      width: 100%; }
+    body #services #log {
+      display: flex;
+      flex-direction: row; }
+    body #services h3 {
+      font-family: "seg";
+      font-size: 24px;
+      font-weight: 600;
+      padding-top: 5%;
+      padding-bottom: 5%; }
+    body #services p {
+      font-family: "segl";
+      font-size: 12px;
+      font-weight: 400; }
+
+/*# sourceMappingURL=style.css.map */
