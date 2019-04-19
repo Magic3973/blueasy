@@ -8,7 +8,10 @@
     src: url(../font/Segoeuil.ttf);
 }
 
-
+@font-face {
+    font-family: "segb";
+    src: url(../font/Segoeb.ttf);
+}
 
 body {
     margin: 0;
@@ -20,8 +23,17 @@ body {
         color: white;
         font-family: "segl";
         padding-top: 8%;
-        
+        margin-bottom: 0;
 
+        @media screen and (max-width: 640px) {
+            font-size: 24px;
+
+        }
+
+        @media (min-width: 640px) and (max-width: 767px) {
+            font-size: 26px;
+
+        }
     }
 
     /*    ****** header **********   */
@@ -43,10 +55,18 @@ body {
             margin-top: 30%;
             text-align: center;
 
+            @media screen and (max-width: 640px) {
+                font-size: 28px;
+
+            }
+
+            @media (min-width: 640px) and (max-width: 767px) {
+                font-size: 30px;
+
+            }
+
+
         }
-
-
-       
 
         #titre {
 
@@ -121,24 +141,224 @@ body {
 
         }
 
-        #log {
-            display: flex;
-            flex-direction: row;
-
-        }
 
         h3 {
             font-family: "seg";
             font-size: 24px;
-            font-weight: 600;
             padding-top: 5%;
             padding-bottom: 5%;
         }
+
 
         p {
             font-family: "segl";
             font-size: 12px;
             font-weight: 400;
+
+        }
+
+        hr {
+
+            width: 4%;
+            border: 1.2px solid white;
+            margin-right: 96%;
+            margin-top: 3px;
+
+
+        }
+    }
+
+    /*   **********   portfolio   ******   */
+    #portfolio {
+
+        .container-fluid {
+            height: 800px;
+            width: 100%;
+
+        }
+
+        #photos {
+            display: flex;
+            flex-direction: row;
+        }
+
+        h2 {
+            color: black;
+
+        }
+
+        hr {
+
+            width: 4%;
+            border: 1.2px solid #353f46;
+            margin-right: 96%;
+            margin-top: 3px;
+            margin-bottom: 5%;
+
+
+        }
+    }
+
+    /*   ******   just     ******* */
+    #just {
+
+        .container-fluid {
+            background-color: #515f67;
+            height: 500px;
+            width: 100%;
+
+        }
+
+        p {
+            font-family: "segl";
+            font-size: 14px;
+            font-weight: 400;
+            color: white;
+        }
+
+        button {
+            border-radius: 0;
+            padding: 12px 45px 12px 45px;
+            font-family: "segb";
+            font-size: 14px;
+            color: #353f46;
+            border: 2px solid #353f46;
+            margin-top: 5%;
+        }
+
+        hr {
+
+            width: 4%;
+            border: 1.2px solid white;
+            margin-right: 96%;
+            margin-top: 3px;
+            margin-bottom: 4%;
+
+
+        }
+    }
+
+    /*   ******  twitter    ******* */
+    #twitter {
+
+        .container-fluid {
+            background-color: #5bc6f2;
+            height: 305px;
+            width: 100%;
+
+        }
+
+        p {
+            font-family: "segl";
+            font-size: 28px;
+            font-weight: 400;
+            color: white;
+        }
+
+        hr {
+
+            width: 4%;
+            border: 1.2px solid white;
+            margin-right: 96%;
+            margin-top: 3px;
+            margin-bottom: 4%;
+
+        }
+
+        a {
+            color: white;
+        }
+
+        .twit {
+            padding-top: 6.8%;
+        }
+    }
+
+    /*   ******  WHO    ******* */
+    #who {
+
+        .container-fluid {
+            background-image: url(../img/photographe.jpg);
+            background: no-repeat cover;
+            height: 505px;
+            width: 100%;
+
+        }
+
+        p {
+            font-family: "seg";
+            font-size: 14px;
+            color: white;
+            line-height: 2;
+        }
+
+        hr {
+
+            width: 4%;
+            border: 1.2px solid white;
+            margin-right: 96%;
+            margin-top: 3px;
+            margin-bottom: 4%;
+
+        }
+
+        i {
+            color: white;
+            border: 2px solid white;
+            padding: 60% 60% 60% 60%;
+        }
+
+       #logos {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+  /*   ******  twitter    ******* */
+    #testimonials {
+
+        .container-fluid {
+           
+            height: 305px;
+            width: 100%;
+         
+        }
+
+        p {
+            font-family: "segl";
+            font-size: 28px;
+            font-weight: 400;
+            color: #515f67;
+        }
+
+        hr {
+
+            width: 4%;
+            border: 1.2px solid #515f67;
+            margin-right: 96%;
+            margin-top: 3px;
+            margin-bottom: 4%;
+            
+
+        }
+
+        i{
+            color: #353f46;
+             font-weight: 800;
+        }
+
+        .twit {
+            padding-top: 6.8%;
+        }
+        
+        #walt {
+            font-family: "segb";
+            font-size: 14px;
+            font-weight: 400;
+             color: #5bc6f2;
+        }
+        h2 {
+            color: #353f46;
         }
     }
 
