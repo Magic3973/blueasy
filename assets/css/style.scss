@@ -26,47 +26,147 @@ body {
         margin-bottom: 0;
 
         @media screen and (max-width: 640px) {
-            font-size: 24px;
+            font-size: 18px;
 
         }
 
         @media (min-width: 640px) and (max-width: 767px) {
-            font-size: 26px;
-
+            font-size: 24px;
         }
     }
 
     /*    ****** header **********   */
 
-    header {
 
-        .container-fluid {
-            padding: 0;
-            background-image: url(../img/champs.jpg);
-            background: cover, no-repeat;
+    #des {
+        padding: 0;
+
+        #nav2 {
+            position: fixed;
+            background: rgba(0, 0, 0, 0.40);
+            background-repeat: no-repeat;
             width: 100%;
-            height: 800px;
+            height: 160px;
+            padding: 0;
+            padding-top: 40px;
+                z-index: 15;
+
+            @media screen and (max-width: 640px) {
+                height: 80px;
+                padding-top: 6px;
+                background: rgba(0, 0, 0, 0.70);
+                color: #5bc6f2;
+
+            }
+
+            button {
+                @media screen and (max-width: 640px) {
+                    border: 2px solid #5bc6f2;
+
+                }
+            }
+
+
+
+
+
+            span {
+                color: #5bc6f2;
+                font-family: "segb";
+                font-size: 30px;
+
+                @media screen and (max-width: 640px) {
+                    font-size: 18px;
+                }
+            }
+
+
+            .nav-link:hover {
+                border: 2px solid #5bc6f2;
+                padding: 11px 18px;
+                color: #5bc6f2;
+
+            }
+
+            .nav-link {
+                font-family: "segb";
+                font-size: 14px;
+                color: white;
+                padding: 11px 18px;
+                border: 2px solid transparent;
+            }
+
+            .navbar-brand {
+                font-family: "segb";
+                font-size: 30px;
+                color: white;
+
+                @media screen and (max-width: 640px) {
+                    font-size: 18px;
+                }
+            }
         }
 
 
         h1 {
             text-transform: uppercase;
             font-family: "segl";
+            color: white;
+            font-size: 42px;
             margin-top: 30%;
             text-align: center;
 
             @media screen and (max-width: 640px) {
-                font-size: 28px;
+                font-size: 16px;
+                display: flex;
+                flex-direction: column;
+                margin-top: 20%;
 
             }
 
             @media (min-width: 640px) and (max-width: 767px) {
-                font-size: 30px;
+                font-size: 24px;
+
+            }
+
+            @media (min-width: 768px) and (max-width: 950px) {
+                margin-top: 57%;
+            }
+
+
+            .text {
+                @media screen and (max-width: 640px) {
+                    padding: 0 15px;
+                }
+            }
+        }
+
+
+        #message1 {
+            background-image: url(../img/champs.jpg);
+            background-image: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 800px;
+            padding: 0;
+
+            @media screen and (max-width: 640px) {
+                height: 400px;
+                padding: 0;
+                padding-top: 80px;
+
+            }
+
+            @media (min-width: 640px) and (max-width: 767px) {
+                height: 600px;
 
             }
 
 
+
         }
+
 
         #titre {
 
@@ -77,6 +177,8 @@ body {
             font-size: 42px;
             color: white;
 
+
+
             .badge {
                 border-radius: 0;
                 font-size: 42px;
@@ -85,46 +187,30 @@ body {
 
 
                 @media screen and (max-width: 640px) {
-                    font-size: 28px;
+                    border-radius: 0;
+                    font-size: 16px;
+                    margin-top: 20px;
+                    background-color: transparent;
+
 
                 }
 
                 @media (min-width: 640px) and (max-width: 767px) {
-                    font-size: 30px;
-
-
+                    border-radius: 0;
+                    font-size: 24px;
+                    margin-top: 20px;
                 }
 
+                @media (min-width: 768px) and (max-width: 950px) {
 
+                    font-size: 30px;
+
+                }
 
             }
         }
 
     }
-
-    /* ******* nav ********* */
-
-
-    nav span {
-        color: #5bc6f2;
-        font-size: 30px;
-        font-weight: 700;
-    }
-
-
-
-    .navbar-brand {
-
-        color: white;
-        font-size: 30px;
-        font-weight: 700;
-    }
-
-
-
-
-
-
 
 
 
@@ -136,8 +222,11 @@ body {
 
         .container-fluid {
             background-color: #5bc6f2;
-            height: 405px;
+            background-image: cover;
+            background-repeat: no-repeat;
+            min-height: 405px;
             width: 100%;
+            padding: 0;
 
         }
 
@@ -147,6 +236,16 @@ body {
             font-size: 24px;
             padding-top: 5%;
             padding-bottom: 5%;
+
+            @media screen and (max-width: 640px) {
+                font-size: 14px;
+
+            }
+
+            @media (min-width: 640px) and (max-width: 767px) {
+                font-size: 18px;
+
+            }
         }
 
 
@@ -165,6 +264,16 @@ body {
             margin-top: 3px;
 
 
+            @media screen and (max-width: 640px) {
+                font-size: 24px;
+
+            }
+
+            @media (min-width: 640px) and (max-width: 767px) {
+                font-size: 26px;
+
+            }
+
         }
     }
 
@@ -172,9 +281,33 @@ body {
     #portfolio {
 
         .container-fluid {
-            height: 800px;
-            width: 100%;
+          width: 100%;
 
+        }
+
+        .nav-link:hover {
+            border: 2px solid #5bc6f2;
+            padding: 11px 18px;
+            color: #5bc6f2;
+
+        }
+
+        .nav-link {
+            font-family: "segb";
+            font-size: 14px;
+            color: #353f46;
+            padding: 11px 18px;
+            border: 2px solid transparent;
+        }
+
+        .navbar-brand {
+            font-family: "segb";
+            font-size: 30px;
+            color:#353f46;
+
+            @media screen and (max-width: 640px) {
+                font-size: 18px;
+            }
         }
 
         #photos {
@@ -189,9 +322,9 @@ body {
 
         hr {
 
-            width: 4%;
+            width: 30%;
             border: 1.2px solid #353f46;
-            margin-right: 96%;
+            margin-right: 70%;
             margin-top: 3px;
             margin-bottom: 5%;
 
@@ -206,6 +339,11 @@ body {
             background-color: #515f67;
             height: 500px;
             width: 100%;
+            padding: 0;
+
+            @media screen and (max-width: 640px) {
+                height: 465px;
+            }
 
         }
 
@@ -214,6 +352,15 @@ body {
             font-size: 14px;
             font-weight: 400;
             color: white;
+
+            @media screen and (max-width: 640px) {
+                font-size: 12px;
+
+            }
+
+
+
+
         }
 
         button {
@@ -224,6 +371,21 @@ body {
             color: #353f46;
             border: 2px solid #353f46;
             margin-top: 5%;
+
+            @media screen and (max-width: 640px) {
+                border-radius: 0;
+                padding: 6px 25px 6px 25px;
+                font-family: "segb";
+                font-size: 12px;
+                color: #353f46;
+                border: 2px solid #353f46;
+                margin-top: 3%;
+
+            }
+        }
+
+        button:hover {
+            color: #5bc6f2;
         }
 
         hr {
@@ -243,8 +405,14 @@ body {
 
         .container-fluid {
             background-color: #5bc6f2;
+            background-image: cover;
+            background-repeat: no-repeat;
             height: 305px;
             width: 100%;
+
+            @media screen and (max-width: 640px) {
+                height: 160px;
+            }
 
         }
 
@@ -253,6 +421,12 @@ body {
             font-size: 28px;
             font-weight: 400;
             color: white;
+            margin-left: 1.5%;
+
+            @media screen and (max-width: 640px) {
+                font-size: 18px;
+
+            }
         }
 
         hr {
@@ -262,6 +436,8 @@ body {
             margin-right: 96%;
             margin-top: 3px;
             margin-bottom: 4%;
+            margin-left: 1.5%;
+
 
         }
 
@@ -271,6 +447,15 @@ body {
 
         .twit {
             padding-top: 6.8%;
+
+            @media screen and (max-width: 640px) {
+                padding-top: 1.5%;
+
+            }
+        }
+
+        h2 {
+            margin-left: 1.5%;
         }
     }
 
@@ -279,9 +464,22 @@ body {
 
         .container-fluid {
             background-image: url(../img/photographe.jpg);
-            background: no-repeat cover;
+            background-position: center;
+            background-image: cover;
+            background-repeat: no-repeat;
             height: 505px;
             width: 100%;
+
+            @media screen and (max-width: 640px) {
+                height: 400px;
+            }
+
+        }
+
+        h2 {
+            @media (min-width: 768px) and (max-width: 950px) {
+                padding-top: 9%;
+            }
 
         }
 
@@ -290,6 +488,12 @@ body {
             font-size: 14px;
             color: white;
             line-height: 2;
+
+            @media screen and (max-width: 640px) {
+                font-size: 12px;
+                line-height: 1.5;
+
+            }
         }
 
         hr {
@@ -304,24 +508,155 @@ body {
 
         i {
             color: white;
-            border: 2px solid white;
-            padding: 60% 60% 60% 60%;
+
         }
 
-       #logos {
-            display: flex;
-            flex-direction: row;
+        a {
+            @media screen and (max-width: 640px) {
+                padding: 0;
+                margin-left: 11%;
+
+            }
+
+            @media (min-width: 640px) and (max-width: 767px) {
+                padding: 0;
+
+            }
+        }
+
+        a:hover {
+            color: #5bc6f2;
+        }
+
+        #grand {
+            border: 2px solid white;
+            padding: 43%;
+
+            @media screen and (max-width: 640px) {
+                padding: 18%;
+                margin-left: 45%;
+
+            }
+
+            @media (min-width: 640px) and (max-width: 767px) {
+                padding: 20%;
+
+            }
+
+            @media (min-width: 768px) and (max-width: 950px) {
+                padding: 35%;
+
+            }
+        }
+
+        #grand:hover {
+            color: #5bc6f2;
+        }
+
+        #twitos {
+
+            border: 2px solid white;
+            padding: 45%;
+
+            @media screen and (max-width: 640px) {
+                padding: 20%;
+                margin-left: 45%;
+
+            }
+
+            @media (min-width: 640px) and (max-width: 767px) {
+                padding: 20%;
+
+            }
+
+            @media (min-width: 768px) and (max-width: 950px) {
+
+                padding: 37%;
+
+            }
+        }
+
+        #twitos:hover {
+            color: #5bc6f2;
+        }
+
+        #drib {
+            border: 2px solid white;
+            padding: 45%;
+
+            @media screen and (max-width: 640px) {
+                padding: 20%;
+                margin-left: 45%;
+            }
+
+            @media (min-width: 640px) and (max-width: 767px) {
+                padding: 20%;
+
+            }
+
+            @media (min-width: 768px) and (max-width: 950px) {
+
+                padding: 37%;
+
+            }
+        }
+
+        #drib:hover {
+            color: #5bc6f2;
+        }
+
+        #grand2 {
+            border: 2px solid white;
+            padding: 43%;
+
+            @media screen and (max-width: 640px) {
+                padding: 18%;
+                margin-left: 45%;
+
+            }
+
+            @media (min-width: 640px) and (max-width: 767px) {
+                padding: 20%;
+
+            }
+
+            @media (min-width: 768px) and (max-width: 950px) {
+
+                padding: 35%;
+
+            }
         }
     }
 
-  /*   ******  twitter    ******* */
+    #grand2:hover {
+        color: #5bc6f2;
+    }
+
+    #twi {
+        padding: 0;
+    }
+
+    #logos {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    /*   ******  testimoniale    ******* */
     #testimonials {
 
         .container-fluid {
-           
-            height: 305px;
+
+
             width: 100%;
-         
+            padding: 0;
+
+            @media (min-width: 768px) and (max-width: 950px) {
+
+                padding-bottom: 5%;
+
+            }
+
         }
 
         p {
@@ -329,6 +664,10 @@ body {
             font-size: 28px;
             font-weight: 400;
             color: #515f67;
+
+            @media screen and (max-width: 640px) {
+                font-size: 18px;
+            }
         }
 
         hr {
@@ -338,28 +677,255 @@ body {
             margin-right: 96%;
             margin-top: 3px;
             margin-bottom: 4%;
-            
+
 
         }
 
-        i{
+        i {
             color: #353f46;
-             font-weight: 800;
+            font-weight: 800;
         }
 
         .twit {
             padding-top: 6.8%;
+            padding-left: 0;
         }
-        
+
         #walt {
             font-family: "segb";
             font-size: 14px;
             font-weight: 400;
-             color: #5bc6f2;
+            color: #5bc6f2;
+
+            @media screen and (max-width: 640px) {
+                font-size: 10px;
+            }
         }
+
         h2 {
             color: #353f46;
         }
+
     }
 
+    /*   ******  contact    ******* */
+    #contact {
+
+        .container-fluid {
+            background-image: url(../img/bg-contact.jpg);
+            background-image: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            max-height: 814px;
+            width: 100%;
+            padding: 0;
+
+            @media screen and (max-width: 640px) {
+                padding-bottom: 15%;
+            }
+
+            @media (min-width: 768px) and (max-width: 950px) {
+
+                padding-bottom: 7%;
+
+            }
+
+        }
+
+        #cont {
+            @media screen and (max-width: 640px) {
+                margin-bottom: 20px;
+            }
+        }
+
+        ul {
+            list-style: none;
+            font-family: "seg";
+            font-size: 14px;
+            color: white;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+
+            @media screen and (max-width: 640px) {
+                font-size: 12px;
+            }
+        }
+
+        label {
+            font-family: "segb";
+            font-size: 14px;
+            font-weight: 700;
+            color: white;
+
+            @media screen and (max-width: 640px) {
+                font-size: 12px;
+                margin-bottom: 20px;
+            }
+
+
+        }
+
+        input {
+            border: 1px solid white;
+            background-color: transparent;
+            border-radius: 0;
+        }
+
+        textarea {
+            border: 1px solid white;
+            background-color: transparent;
+            border-radius: 0;
+        }
+
+        p {
+            font-family: "seg";
+            font-size: 12px;
+            color: white;
+
+            @media screen and (max-width: 640px) {
+                margin-bottom: 10px;
+                margin-top: 20px;
+            }
+        }
+
+        #dessusc {
+            display: flex;
+            flex-direction: row;
+        }
+
+        button {
+            border-radius: 0;
+            padding: 12px 45px 12px 45px;
+            font-family: "segb";
+            font-size: 14px;
+            color: white;
+            margin-top: 5%;
+            background-color: #5bc6f2;
+            border: none;
+
+            @media screen and (max-width: 640px) {
+                border-radius: 0;
+                padding: 6px 45px 6px 45px;
+                font-family: "segb";
+                font-size: 12px;
+                margin-top: 3%;
+                margin-top: 10%;
+
+            }
+        }
+
+        hr {
+
+            width: 4%;
+            border: 1.2px solid white;
+            margin-right: 96%;
+            margin-top: 3px;
+            margin-bottom: 4%;
+        }
+
+        .form-group {
+            @media screen and (max-width: 640px) {
+                margin-bottom: 0;
+            }
+
+
+        }
+    }
+
+    /*       ********   footer     ********   */
+    footer {
+        .container-fluid {
+            width: 100%;
+            background: black;
+            background-repeat: no-repeat;
+            padding-bottom: 10px;
+            padding-top: 10px;
+
+            li {
+                list-style: none;
+                text-align: center;
+                color: #353f46;
+
+
+            }
+
+            ul {
+                padding: 5% 0 0 5px;
+                display: flex;
+                flex-direction: row;
+
+                @media screen and (max-width: 640px) {
+                    padding: 0;
+                    font-size: 12px;
+                    padding: 6% 0 0 2px;
+                }
+
+                @media (min-width: 768px) and (max-width: 950px) {
+
+                    padding: 5% 0 0 2px;
+                }
+            }
+
+            a {
+                color: #353f46;
+                font-family: "seg";
+                font-size: 14px;
+                line-height: 1;
+
+
+                @media screen and (max-width: 640px) {
+                    line-height: 0.5;
+                    font-size: 12px;
+                    padding-left: 2%;
+                    padding-right: 2%;
+                }
+
+            }
+
+            a:hover {
+                color: white;
+                font-family: "seg";
+                font-size: 14px;
+                line-height: 1;
+            }
+
+            p {
+
+                line-height: 1;
+                font-family: "seg";
+                font-size: 14px;
+                margin: 0;
+                padding-top: 20px;
+
+                @media screen and (max-width: 640px) {
+                    font-size: 12px;
+
+                }
+
+                @media (min-width: 768px) and (max-width: 950px) {
+
+                    padding-top: 30px;
+
+                }
+
+
+            }
+
+
+            #cop {
+                @media screen and (max-width: 640px) {
+                    padding: 0;
+
+                }
+
+                #cop2 {
+                    @media screen and (max-width: 640px) {
+                        padding: 0;
+
+                    }
+                }
+            }
+        }
+    }
 }

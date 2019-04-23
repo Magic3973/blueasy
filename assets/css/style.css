@@ -10,13 +10,14 @@
 body {
   margin: 0;
   /*    ****** header **********   */
-  /* ******* nav ********* */
   /*      *********services****************      */
   /*   **********   portfolio   ******   */
   /*   ******   just     ******* */
   /*   ******  twitter    ******* */
   /*   ******  WHO    ******* */
-  /*   ******  twitter    ******* */ }
+  /*   ******  testimoniale    ******* */
+  /*   ******  contact    ******* */
+  /*       ********   footer     ********   */ }
   body h2 {
     font-size: 30px;
     color: white;
@@ -25,64 +26,138 @@ body {
     margin-bottom: 0; }
     @media screen and (max-width: 640px) {
       body h2 {
-        font-size: 24px; } }
+        font-size: 18px; } }
     @media (min-width: 640px) and (max-width: 767px) {
       body h2 {
-        font-size: 26px; } }
-  body header .container-fluid {
-    padding: 0;
-    background-image: url(../img/champs.jpg);
-    background: cover, no-repeat;
-    width: 100%;
-    height: 800px; }
-  body header h1 {
-    text-transform: uppercase;
-    font-family: "segl";
-    margin-top: 30%;
-    text-align: center; }
-    @media screen and (max-width: 640px) {
-      body header h1 {
-        font-size: 28px; } }
-    @media (min-width: 640px) and (max-width: 767px) {
-      body header h1 {
-        font-size: 30px; } }
-  body header #titre {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 2;
-    font-size: 42px;
-    color: white; }
-    body header #titre .badge {
-      border-radius: 0;
-      font-size: 42px;
-      margin-top: 20px;
-      font-weight: 300; }
+        font-size: 24px; } }
+  body #des {
+    padding: 0; }
+    body #des #nav2 {
+      position: fixed;
+      background: rgba(0, 0, 0, 0.4);
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 160px;
+      padding: 0;
+      padding-top: 40px;
+      z-index: 15; }
       @media screen and (max-width: 640px) {
-        body header #titre .badge {
-          font-size: 28px; } }
+        body #des #nav2 {
+          height: 80px;
+          padding-top: 6px;
+          background: rgba(0, 0, 0, 0.7);
+          color: #5bc6f2; } }
+      @media screen and (max-width: 640px) {
+        body #des #nav2 button {
+          border: 2px solid #5bc6f2; } }
+      body #des #nav2 span {
+        color: #5bc6f2;
+        font-family: "segb";
+        font-size: 30px; }
+        @media screen and (max-width: 640px) {
+          body #des #nav2 span {
+            font-size: 18px; } }
+      body #des #nav2 .nav-link:hover {
+        border: 2px solid #5bc6f2;
+        padding: 11px 18px;
+        color: #5bc6f2; }
+      body #des #nav2 .nav-link {
+        font-family: "segb";
+        font-size: 14px;
+        color: white;
+        padding: 11px 18px;
+        border: 2px solid transparent; }
+      body #des #nav2 .navbar-brand {
+        font-family: "segb";
+        font-size: 30px;
+        color: white; }
+        @media screen and (max-width: 640px) {
+          body #des #nav2 .navbar-brand {
+            font-size: 18px; } }
+    body #des h1 {
+      text-transform: uppercase;
+      font-family: "segl";
+      color: white;
+      font-size: 42px;
+      margin-top: 30%;
+      text-align: center; }
+      @media screen and (max-width: 640px) {
+        body #des h1 {
+          font-size: 16px;
+          display: flex;
+          flex-direction: column;
+          margin-top: 20%; } }
       @media (min-width: 640px) and (max-width: 767px) {
-        body header #titre .badge {
-          font-size: 30px; } }
-  body nav span {
-    color: #5bc6f2;
-    font-size: 30px;
-    font-weight: 700; }
-  body .navbar-brand {
-    color: white;
-    font-size: 30px;
-    font-weight: 700; }
+        body #des h1 {
+          font-size: 24px; } }
+      @media (min-width: 768px) and (max-width: 950px) {
+        body #des h1 {
+          margin-top: 57%; } }
+      @media screen and (max-width: 640px) {
+        body #des h1 .text {
+          padding: 0 15px; } }
+    body #des #message1 {
+      background-image: url(../img/champs.jpg);
+      background-image: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100%;
+      height: 800px;
+      padding: 0; }
+      @media screen and (max-width: 640px) {
+        body #des #message1 {
+          height: 400px;
+          padding: 0;
+          padding-top: 80px; } }
+      @media (min-width: 640px) and (max-width: 767px) {
+        body #des #message1 {
+          height: 600px; } }
+    body #des #titre {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 2;
+      font-size: 42px;
+      color: white; }
+      body #des #titre .badge {
+        border-radius: 0;
+        font-size: 42px;
+        margin-top: 20px;
+        font-weight: 300; }
+        @media screen and (max-width: 640px) {
+          body #des #titre .badge {
+            border-radius: 0;
+            font-size: 16px;
+            margin-top: 20px;
+            background-color: transparent; } }
+        @media (min-width: 640px) and (max-width: 767px) {
+          body #des #titre .badge {
+            border-radius: 0;
+            font-size: 24px;
+            margin-top: 20px; } }
+        @media (min-width: 768px) and (max-width: 950px) {
+          body #des #titre .badge {
+            font-size: 30px; } }
   body #services {
     color: white; }
     body #services .container-fluid {
       background-color: #5bc6f2;
-      height: 405px;
-      width: 100%; }
+      background-image: cover;
+      background-repeat: no-repeat;
+      min-height: 405px;
+      width: 100%;
+      padding: 0; }
     body #services h3 {
       font-family: "seg";
       font-size: 24px;
       padding-top: 5%;
       padding-bottom: 5%; }
+      @media screen and (max-width: 640px) {
+        body #services h3 {
+          font-size: 14px; } }
+      @media (min-width: 640px) and (max-width: 767px) {
+        body #services h3 {
+          font-size: 18px; } }
     body #services p {
       font-family: "segl";
       font-size: 12px;
@@ -92,29 +167,58 @@ body {
       border: 1.2px solid white;
       margin-right: 96%;
       margin-top: 3px; }
+      @media screen and (max-width: 640px) {
+        body #services hr {
+          font-size: 24px; } }
+      @media (min-width: 640px) and (max-width: 767px) {
+        body #services hr {
+          font-size: 26px; } }
   body #portfolio .container-fluid {
-    height: 800px;
     width: 100%; }
+  body #portfolio .nav-link:hover {
+    border: 2px solid #5bc6f2;
+    padding: 11px 18px;
+    color: #5bc6f2; }
+  body #portfolio .nav-link {
+    font-family: "segb";
+    font-size: 14px;
+    color: #353f46;
+    padding: 11px 18px;
+    border: 2px solid transparent; }
+  body #portfolio .navbar-brand {
+    font-family: "segb";
+    font-size: 30px;
+    color: #353f46; }
+    @media screen and (max-width: 640px) {
+      body #portfolio .navbar-brand {
+        font-size: 18px; } }
   body #portfolio #photos {
     display: flex;
     flex-direction: row; }
   body #portfolio h2 {
     color: black; }
   body #portfolio hr {
-    width: 4%;
+    width: 30%;
     border: 1.2px solid #353f46;
-    margin-right: 96%;
+    margin-right: 70%;
     margin-top: 3px;
     margin-bottom: 5%; }
   body #just .container-fluid {
     background-color: #515f67;
     height: 500px;
-    width: 100%; }
+    width: 100%;
+    padding: 0; }
+    @media screen and (max-width: 640px) {
+      body #just .container-fluid {
+        height: 465px; } }
   body #just p {
     font-family: "segl";
     font-size: 14px;
     font-weight: 400;
     color: white; }
+    @media screen and (max-width: 640px) {
+      body #just p {
+        font-size: 12px; } }
   body #just button {
     border-radius: 0;
     padding: 12px 45px 12px 45px;
@@ -123,6 +227,17 @@ body {
     color: #353f46;
     border: 2px solid #353f46;
     margin-top: 5%; }
+    @media screen and (max-width: 640px) {
+      body #just button {
+        border-radius: 0;
+        padding: 6px 25px 6px 25px;
+        font-family: "segb";
+        font-size: 12px;
+        color: #353f46;
+        border: 2px solid #353f46;
+        margin-top: 3%; } }
+  body #just button:hover {
+    color: #5bc6f2; }
   body #just hr {
     width: 4%;
     border: 1.2px solid white;
@@ -131,33 +246,60 @@ body {
     margin-bottom: 4%; }
   body #twitter .container-fluid {
     background-color: #5bc6f2;
+    background-image: cover;
+    background-repeat: no-repeat;
     height: 305px;
     width: 100%; }
+    @media screen and (max-width: 640px) {
+      body #twitter .container-fluid {
+        height: 160px; } }
   body #twitter p {
     font-family: "segl";
     font-size: 28px;
     font-weight: 400;
-    color: white; }
+    color: white;
+    margin-left: 1.5%; }
+    @media screen and (max-width: 640px) {
+      body #twitter p {
+        font-size: 18px; } }
   body #twitter hr {
     width: 4%;
     border: 1.2px solid white;
     margin-right: 96%;
     margin-top: 3px;
-    margin-bottom: 4%; }
+    margin-bottom: 4%;
+    margin-left: 1.5%; }
   body #twitter a {
     color: white; }
   body #twitter .twit {
     padding-top: 6.8%; }
+    @media screen and (max-width: 640px) {
+      body #twitter .twit {
+        padding-top: 1.5%; } }
+  body #twitter h2 {
+    margin-left: 1.5%; }
   body #who .container-fluid {
     background-image: url(../img/photographe.jpg);
-    background: no-repeat cover;
+    background-position: center;
+    background-image: cover;
+    background-repeat: no-repeat;
     height: 505px;
     width: 100%; }
+    @media screen and (max-width: 640px) {
+      body #who .container-fluid {
+        height: 400px; } }
+  @media (min-width: 768px) and (max-width: 950px) {
+    body #who h2 {
+      padding-top: 9%; } }
   body #who p {
     font-family: "seg";
     font-size: 14px;
     color: white;
     line-height: 2; }
+    @media screen and (max-width: 640px) {
+      body #who p {
+        font-size: 12px;
+        line-height: 1.5; } }
   body #who hr {
     width: 4%;
     border: 1.2px solid white;
@@ -165,20 +307,95 @@ body {
     margin-top: 3px;
     margin-bottom: 4%; }
   body #who i {
-    color: white;
+    color: white; }
+  @media screen and (max-width: 640px) {
+    body #who a {
+      padding: 0;
+      margin-left: 11%; } }
+  @media (min-width: 640px) and (max-width: 767px) {
+    body #who a {
+      padding: 0; } }
+  body #who a:hover {
+    color: #5bc6f2; }
+  body #who #grand {
     border: 2px solid white;
-    padding: 60% 60% 60% 60%; }
-  body #who #logos {
+    padding: 43%; }
+    @media screen and (max-width: 640px) {
+      body #who #grand {
+        padding: 18%;
+        margin-left: 45%; } }
+    @media (min-width: 640px) and (max-width: 767px) {
+      body #who #grand {
+        padding: 20%; } }
+    @media (min-width: 768px) and (max-width: 950px) {
+      body #who #grand {
+        padding: 35%; } }
+  body #who #grand:hover {
+    color: #5bc6f2; }
+  body #who #twitos {
+    border: 2px solid white;
+    padding: 45%; }
+    @media screen and (max-width: 640px) {
+      body #who #twitos {
+        padding: 20%;
+        margin-left: 45%; } }
+    @media (min-width: 640px) and (max-width: 767px) {
+      body #who #twitos {
+        padding: 20%; } }
+    @media (min-width: 768px) and (max-width: 950px) {
+      body #who #twitos {
+        padding: 37%; } }
+  body #who #twitos:hover {
+    color: #5bc6f2; }
+  body #who #drib {
+    border: 2px solid white;
+    padding: 45%; }
+    @media screen and (max-width: 640px) {
+      body #who #drib {
+        padding: 20%;
+        margin-left: 45%; } }
+    @media (min-width: 640px) and (max-width: 767px) {
+      body #who #drib {
+        padding: 20%; } }
+    @media (min-width: 768px) and (max-width: 950px) {
+      body #who #drib {
+        padding: 37%; } }
+  body #who #drib:hover {
+    color: #5bc6f2; }
+  body #who #grand2 {
+    border: 2px solid white;
+    padding: 43%; }
+    @media screen and (max-width: 640px) {
+      body #who #grand2 {
+        padding: 18%;
+        margin-left: 45%; } }
+    @media (min-width: 640px) and (max-width: 767px) {
+      body #who #grand2 {
+        padding: 20%; } }
+    @media (min-width: 768px) and (max-width: 950px) {
+      body #who #grand2 {
+        padding: 35%; } }
+  body #grand2:hover {
+    color: #5bc6f2; }
+  body #twi {
+    padding: 0; }
+  body #logos {
     display: flex;
     flex-direction: row; }
   body #testimonials .container-fluid {
-    height: 305px;
-    width: 100%; }
+    width: 100%;
+    padding: 0; }
+    @media (min-width: 768px) and (max-width: 950px) {
+      body #testimonials .container-fluid {
+        padding-bottom: 5%; } }
   body #testimonials p {
     font-family: "segl";
     font-size: 28px;
     font-weight: 400;
     color: #515f67; }
+    @media screen and (max-width: 640px) {
+      body #testimonials p {
+        font-size: 18px; } }
   body #testimonials hr {
     width: 4%;
     border: 1.2px solid #515f67;
@@ -189,13 +406,155 @@ body {
     color: #353f46;
     font-weight: 800; }
   body #testimonials .twit {
-    padding-top: 6.8%; }
+    padding-top: 6.8%;
+    padding-left: 0; }
   body #testimonials #walt {
     font-family: "segb";
     font-size: 14px;
     font-weight: 400;
     color: #5bc6f2; }
+    @media screen and (max-width: 640px) {
+      body #testimonials #walt {
+        font-size: 10px; } }
   body #testimonials h2 {
     color: #353f46; }
+  body #contact .container-fluid {
+    background-image: url(../img/bg-contact.jpg);
+    background-image: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 814px;
+    width: 100%;
+    padding: 0; }
+    @media screen and (max-width: 640px) {
+      body #contact .container-fluid {
+        padding-bottom: 15%; } }
+    @media (min-width: 768px) and (max-width: 950px) {
+      body #contact .container-fluid {
+        padding-bottom: 7%; } }
+  @media screen and (max-width: 640px) {
+    body #contact #cont {
+      margin-bottom: 20px; } }
+  body #contact ul {
+    list-style: none;
+    font-family: "seg";
+    font-size: 14px;
+    color: white;
+    text-align: left;
+    margin: 0;
+    padding: 0; }
+    @media screen and (max-width: 640px) {
+      body #contact ul {
+        font-size: 12px; } }
+  body #contact label {
+    font-family: "segb";
+    font-size: 14px;
+    font-weight: 700;
+    color: white; }
+    @media screen and (max-width: 640px) {
+      body #contact label {
+        font-size: 12px;
+        margin-bottom: 20px; } }
+  body #contact input {
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 0; }
+  body #contact textarea {
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 0; }
+  body #contact p {
+    font-family: "seg";
+    font-size: 12px;
+    color: white; }
+    @media screen and (max-width: 640px) {
+      body #contact p {
+        margin-bottom: 10px;
+        margin-top: 20px; } }
+  body #contact #dessusc {
+    display: flex;
+    flex-direction: row; }
+  body #contact button {
+    border-radius: 0;
+    padding: 12px 45px 12px 45px;
+    font-family: "segb";
+    font-size: 14px;
+    color: white;
+    margin-top: 5%;
+    background-color: #5bc6f2;
+    border: none; }
+    @media screen and (max-width: 640px) {
+      body #contact button {
+        border-radius: 0;
+        padding: 6px 45px 6px 45px;
+        font-family: "segb";
+        font-size: 12px;
+        margin-top: 3%;
+        margin-top: 10%; } }
+  body #contact hr {
+    width: 4%;
+    border: 1.2px solid white;
+    margin-right: 96%;
+    margin-top: 3px;
+    margin-bottom: 4%; }
+  @media screen and (max-width: 640px) {
+    body #contact .form-group {
+      margin-bottom: 0; } }
+  body footer .container-fluid {
+    width: 100%;
+    background: black;
+    background-repeat: no-repeat;
+    padding-bottom: 10px;
+    padding-top: 10px; }
+    body footer .container-fluid li {
+      list-style: none;
+      text-align: center;
+      color: #353f46; }
+    body footer .container-fluid ul {
+      padding: 5% 0 0 5px;
+      display: flex;
+      flex-direction: row; }
+      @media screen and (max-width: 640px) {
+        body footer .container-fluid ul {
+          padding: 0;
+          font-size: 12px;
+          padding: 6% 0 0 2px; } }
+      @media (min-width: 768px) and (max-width: 950px) {
+        body footer .container-fluid ul {
+          padding: 5% 0 0 2px; } }
+    body footer .container-fluid a {
+      color: #353f46;
+      font-family: "seg";
+      font-size: 14px;
+      line-height: 1; }
+      @media screen and (max-width: 640px) {
+        body footer .container-fluid a {
+          line-height: 0.5;
+          font-size: 12px;
+          padding-left: 2%;
+          padding-right: 2%; } }
+    body footer .container-fluid a:hover {
+      color: white;
+      font-family: "seg";
+      font-size: 14px;
+      line-height: 1; }
+    body footer .container-fluid p {
+      line-height: 1;
+      font-family: "seg";
+      font-size: 14px;
+      margin: 0;
+      padding-top: 20px; }
+      @media screen and (max-width: 640px) {
+        body footer .container-fluid p {
+          font-size: 12px; } }
+      @media (min-width: 768px) and (max-width: 950px) {
+        body footer .container-fluid p {
+          padding-top: 30px; } }
+    @media screen and (max-width: 640px) {
+      body footer .container-fluid #cop {
+        padding: 0; } }
+    @media screen and (max-width: 640px) {
+      body footer .container-fluid #cop #cop2 {
+        padding: 0; } }
 
 /*# sourceMappingURL=style.css.map */
