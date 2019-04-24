@@ -22,7 +22,6 @@ body {
     font-size: 30px;
     color: white;
     font-family: "segl";
-    padding-top: 8%;
     margin-bottom: 0; }
     @media screen and (max-width: 640px) {
       body h2 {
@@ -47,6 +46,16 @@ body {
           padding-top: 6px;
           background: rgba(0, 0, 0, 0.7);
           color: #5bc6f2; } }
+      @media (min-width: 640px) and (max-width: 767px) {
+        body #des #nav2 {
+          height: 100px;
+          padding-top: 10px;
+          background: rgba(0, 0, 0, 0.7);
+          color: #5bc6f2; } }
+      @media (min-width: 768px) and (max-width: 950px) {
+        body #des #nav2 {
+          height: 100px;
+          padding-top: 11px; } }
       @media screen and (max-width: 640px) {
         body #des #nav2 button {
           border: 2px solid #5bc6f2; } }
@@ -56,24 +65,42 @@ body {
         font-size: 30px; }
         @media screen and (max-width: 640px) {
           body #des #nav2 span {
-            font-size: 18px; } }
+            font-size: 24 px; } }
+        @media (min-width: 640px) and (max-width: 767px) {
+          body #des #nav2 span {
+            font-size: 24px; } }
       body #des #nav2 .nav-link:hover {
         border: 2px solid #5bc6f2;
         padding: 11px 18px;
         color: #5bc6f2; }
+        @media screen and (max-width: 640px) {
+          body #des #nav2 .nav-link:hover {
+            padding: 11px 11px; } }
+        @media (min-width: 640px) and (max-width: 767px) {
+          body #des #nav2 .nav-link:hover {
+            padding: 11px 11px; } }
       body #des #nav2 .nav-link {
         font-family: "segb";
         font-size: 14px;
         color: white;
         padding: 11px 18px;
         border: 2px solid transparent; }
+        @media screen and (max-width: 640px) {
+          body #des #nav2 .nav-link {
+            padding: 11px 11px; } }
+        @media (min-width: 640px) and (max-width: 767px) {
+          body #des #nav2 .nav-link {
+            padding: 11px 11px; } }
       body #des #nav2 .navbar-brand {
         font-family: "segb";
         font-size: 30px;
         color: white; }
         @media screen and (max-width: 640px) {
           body #des #nav2 .navbar-brand {
-            font-size: 18px; } }
+            font-size: 30px; } }
+        @media (min-width: 640px) and (max-width: 767px) {
+          body #des #nav2 .navbar-brand {
+            font-size: 28px; } }
     body #des h1 {
       text-transform: uppercase;
       font-family: "segl";
@@ -86,7 +113,7 @@ body {
           font-size: 16px;
           display: flex;
           flex-direction: column;
-          margin-top: 20%; } }
+          margin-top: 12%; } }
       @media (min-width: 640px) and (max-width: 767px) {
         body #des h1 {
           font-size: 24px; } }
@@ -107,11 +134,25 @@ body {
       @media screen and (max-width: 640px) {
         body #des #message1 {
           height: 400px;
-          padding: 0;
+          padding: 0 15px;
           padding-top: 80px; } }
       @media (min-width: 640px) and (max-width: 767px) {
         body #des #message1 {
           height: 600px; } }
+    @media screen and (max-width: 640px) {
+      body #des ul {
+        float: right;
+        background: rgba(0, 0, 0, 0.5);
+        background-repeat: no-repeat;
+        padding-right: 0;
+        text-align: right; } }
+    @media (min-width: 640px) and (max-width: 767px) {
+      body #des ul {
+        float: right;
+        background: rgba(0, 0, 0, 0.5);
+        background-repeat: no-repeat;
+        padding-right: 0;
+        text-align: right; } }
     body #des #titre {
       display: flex;
       flex-direction: column;
@@ -127,74 +168,89 @@ body {
         @media screen and (max-width: 640px) {
           body #des #titre .badge {
             border-radius: 0;
-            font-size: 16px;
+            font-size: 24px;
             margin-top: 20px;
-            background-color: transparent; } }
+            white-space: normal; } }
         @media (min-width: 640px) and (max-width: 767px) {
           body #des #titre .badge {
             border-radius: 0;
-            font-size: 24px;
-            margin-top: 20px; } }
+            font-size: 28px;
+            margin-top: 20px;
+            white-space: normal; } }
         @media (min-width: 768px) and (max-width: 950px) {
           body #des #titre .badge {
-            font-size: 30px; } }
-  body #services {
+            font-size: 28px; } }
+  body #service {
     color: white; }
-    body #services .container-fluid {
+    body #service .container-fluid {
       background-color: #5bc6f2;
       background-image: cover;
       background-repeat: no-repeat;
       min-height: 405px;
       width: 100%;
-      padding: 0; }
-    body #services h3 {
+      padding: 6% 0; }
+    body #service h3 {
       font-family: "seg";
       font-size: 24px;
       padding-top: 5%;
       padding-bottom: 5%; }
       @media screen and (max-width: 640px) {
-        body #services h3 {
-          font-size: 14px; } }
+        body #service h3 {
+          font-size: 14px;
+          padding-top: 3%;
+          padding-bottom: 3%; } }
       @media (min-width: 640px) and (max-width: 767px) {
-        body #services h3 {
-          font-size: 18px; } }
-    body #services p {
+        body #service h3 {
+          font-size: 18px;
+          padding-top: 3%;
+          padding-bottom: 3%; } }
+    body #service p {
       font-family: "segl";
       font-size: 12px;
       font-weight: 400; }
-    body #services hr {
+    body #service hr {
       width: 4%;
       border: 1.2px solid white;
       margin-right: 96%;
       margin-top: 3px; }
       @media screen and (max-width: 640px) {
-        body #services hr {
+        body #service hr {
           font-size: 24px; } }
       @media (min-width: 640px) and (max-width: 767px) {
-        body #services hr {
+        body #service hr {
           font-size: 26px; } }
   body #portfolio .container-fluid {
-    width: 100%; }
-  body #portfolio .nav-link:hover {
-    border: 2px solid #5bc6f2;
-    padding: 11px 18px;
-    color: #5bc6f2; }
-  body #portfolio .nav-link {
+    width: 100%;
+    padding: 3% 0;
+    min-height: 500px; }
+  @media screen and (max-width: 640px) {
+    body #portfolio .d-flex {
+      display: flex;
+      flex-direction: column; } }
+  body #portfolio .btn {
     font-family: "segb";
     font-size: 14px;
     color: #353f46;
-    padding: 11px 18px;
+    cursor: pointer;
+    border-radius: 0;
     border: 2px solid transparent; }
-  body #portfolio .navbar-brand {
-    font-family: "segb";
-    font-size: 30px;
-    color: #353f46; }
     @media screen and (max-width: 640px) {
-      body #portfolio .navbar-brand {
-        font-size: 18px; } }
-  body #portfolio #photos {
-    display: flex;
-    flex-direction: row; }
+      body #portfolio .btn {
+        font-size: 10px;
+        padding: 6px 2px 6px 2px; } }
+    @media (min-width: 640px) and (max-width: 767px) {
+      body #portfolio .btn {
+        font-size: 12px;
+        padding: 6px 2px 6px 2px; } }
+  body #portfolio .btn:hover {
+    color: #5bc6f2;
+    border: 2px solid #5bc6f2; }
+    @media screen and (max-width: 640px) {
+      body #portfolio .btn:hover {
+        font-size: 10px;
+        padding: 6px 2px 6px 2px;
+        border: 1px solid #5bc6f2;
+        transition: none; } }
   body #portfolio h2 {
     color: black; }
   body #portfolio hr {
@@ -203,14 +259,29 @@ body {
     margin-right: 70%;
     margin-top: 3px;
     margin-bottom: 5%; }
+  body #portfolio .img-fluid {
+    width: 100%; }
+  body #portfolio .row {
+    margin: 8px -16px; }
+  body #portfolio .show {
+    display: block !important; }
+  body #portfolio .column {
+    float: left;
+    display: none;
+    cursor: crosshair;
+    caret-color: black;
+    /* Hide all elements by default */ }
+  body #portfolio .row,
+  body #portfolio .row > .column {
+    padding: 8px; }
+  body #portfolio .row:after {
+    content: "";
+    display: table;
+    clear: both; }
   body #just .container-fluid {
     background-color: #515f67;
-    height: 500px;
     width: 100%;
-    padding: 0; }
-    @media screen and (max-width: 640px) {
-      body #just .container-fluid {
-        height: 465px; } }
+    padding: 6% 0; }
   body #just p {
     font-family: "segl";
     font-size: 14px;
@@ -219,6 +290,17 @@ body {
     @media screen and (max-width: 640px) {
       body #just p {
         font-size: 12px; } }
+  body #just #log5 {
+    display: flex;
+    flex-direction: row; }
+    @media screen and (max-width: 640px) {
+      body #just #log5 {
+        display: flex;
+        flex-direction: column; } }
+    @media (min-width: 640px) and (max-width: 767px) {
+      body #just #log5 {
+        display: flex;
+        flex-direction: column; } }
   body #just button {
     border-radius: 0;
     padding: 12px 45px 12px 45px;
@@ -226,7 +308,8 @@ body {
     font-size: 14px;
     color: #353f46;
     border: 2px solid #353f46;
-    margin-top: 5%; }
+    margin-top: 5%;
+    margin-bottom: 5%; }
     @media screen and (max-width: 640px) {
       body #just button {
         border-radius: 0;
@@ -248,11 +331,12 @@ body {
     background-color: #5bc6f2;
     background-image: cover;
     background-repeat: no-repeat;
-    height: 305px;
-    width: 100%; }
+    max-height: 305px;
+    width: 100%;
+    padding: 4% 0 15% 0; }
     @media screen and (max-width: 640px) {
       body #twitter .container-fluid {
-        height: 160px; } }
+        height: 200px; } }
   body #twitter p {
     font-family: "segl";
     font-size: 28px;
@@ -269,22 +353,32 @@ body {
     margin-top: 3px;
     margin-bottom: 4%;
     margin-left: 1.5%; }
+    @media screen and (max-width: 640px) {
+      body #twitter hr {
+        padding-left: 4.5%;
+        margin-left: 6.5%; } }
   body #twitter a {
     color: white; }
+  body #twitter a:hover {
+    color: #515f67; }
   body #twitter .twit {
-    padding-top: 6.8%; }
+    padding-top: 0; }
     @media screen and (max-width: 640px) {
       body #twitter .twit {
         padding-top: 1.5%; } }
   body #twitter h2 {
     margin-left: 1.5%; }
+    @media screen and (max-width: 640px) {
+      body #twitter h2 {
+        padding-left: 4.5%; } }
   body #who .container-fluid {
     background-image: url(../img/photographe.jpg);
     background-position: center;
     background-image: cover;
     background-repeat: no-repeat;
-    height: 505px;
-    width: 100%; }
+    max-height: 505px;
+    width: 100%;
+    padding: 4% 0 4% 0; }
     @media screen and (max-width: 640px) {
       body #who .container-fluid {
         height: 400px; } }
@@ -323,7 +417,7 @@ body {
     @media screen and (max-width: 640px) {
       body #who #grand {
         padding: 18%;
-        margin-left: 45%; } }
+        margin-left: 40%; } }
     @media (min-width: 640px) and (max-width: 767px) {
       body #who #grand {
         padding: 20%; } }
@@ -338,7 +432,7 @@ body {
     @media screen and (max-width: 640px) {
       body #who #twitos {
         padding: 20%;
-        margin-left: 45%; } }
+        margin-left: 40%; } }
     @media (min-width: 640px) and (max-width: 767px) {
       body #who #twitos {
         padding: 20%; } }
@@ -368,7 +462,7 @@ body {
     @media screen and (max-width: 640px) {
       body #who #grand2 {
         padding: 18%;
-        margin-left: 45%; } }
+        margin-left: 40%; } }
     @media (min-width: 640px) and (max-width: 767px) {
       body #who #grand2 {
         padding: 20%; } }
@@ -384,7 +478,7 @@ body {
     flex-direction: row; }
   body #testimonials .container-fluid {
     width: 100%;
-    padding: 0; }
+    padding: 6% 0; }
     @media (min-width: 768px) and (max-width: 950px) {
       body #testimonials .container-fluid {
         padding-bottom: 5%; } }
@@ -425,7 +519,7 @@ body {
     background-position: center;
     max-height: 814px;
     width: 100%;
-    padding: 0; }
+    padding: 6% 0; }
     @media screen and (max-width: 640px) {
       body #contact .container-fluid {
         padding-bottom: 15%; } }
@@ -433,9 +527,18 @@ body {
       body #contact .container-fluid {
         padding-bottom: 7%; } }
   @media screen and (max-width: 640px) {
-    body #contact #cont {
-      margin-bottom: 20px; } }
+    body #contact .row {
+      display: flex;
+      flex-wrap: wrap-reverse; } }
+  body #contact #cont {
+    padding-top: 1%; }
+    @media screen and (max-width: 640px) {
+      body #contact #cont {
+        margin-bottom: 20px; } }
+  body #contact li {
+    text-decoration: none; }
   body #contact ul {
+    padding: 6% 0;
     list-style: none;
     font-family: "seg";
     font-size: 14px;
@@ -455,14 +558,26 @@ body {
       body #contact label {
         font-size: 12px;
         margin-bottom: 20px; } }
+  body #contact form {
+    color: black;
+    font-family: "seg";
+    font-size: 18px; }
+  body #contact form:hover {
+    transition: none; }
   body #contact input {
     border: 1px solid white;
     background-color: transparent;
-    border-radius: 0; }
+    border-radius: 0;
+    color: black;
+    font-family: "seg";
+    font-size: 14px; }
   body #contact textarea {
     border: 1px solid white;
     background-color: transparent;
-    border-radius: 0; }
+    border-radius: 0;
+    color: black;
+    font-family: "seg";
+    font-size: 14px; }
   body #contact p {
     font-family: "seg";
     font-size: 12px;
@@ -543,10 +658,11 @@ body {
       font-family: "seg";
       font-size: 14px;
       margin: 0;
-      padding-top: 20px; }
+      padding-top: 45px; }
       @media screen and (max-width: 640px) {
         body footer .container-fluid p {
-          font-size: 12px; } }
+          font-size: 12px;
+          padding-top: 20px; } }
       @media (min-width: 768px) and (max-width: 950px) {
         body footer .container-fluid p {
           padding-top: 30px; } }

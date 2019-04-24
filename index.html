@@ -22,78 +22,79 @@
 </head>
 
 <body>
-    <header>
-        <div class="container-fluid">
+    <header class="container-fluid" id="des">
+        <div class="container-fluid" id="nav2">
+
+            <nav class="container navbar navbar-expand-md navbar-dark bg-transparent">
+                <a class="navbar-brand" href="#">BLU<span>E</span>ASY</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto margin">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#home">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">FEATURES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfo">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contac">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container-fluid" id="message1">
             <div class="container">
+                <div class="row">
 
-                <div id="titre">
+                    <div class="col-12" id="titre">
 
-                    <h1 class="text"><span class="badge badge-dark">
-                            "I’m looking for the unexpected.</span><br><span class="badge badge-dark">I’m looking for things I’ve never seen before."</span></h1>
+                        <h1 class="text"><span class="badge badge-dark">
+                                "I’m looking for the unexpected.</span><br><span class="badge badge-dark">I’m looking for things I’ve never seen before."</span></h1>
+                    </div>
                 </div>
             </div>
         </div>
 
     </header>
-    <section id="nav">
-
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">BLU<span>E</span>SY</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto margin">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">SERVICES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">FEATURES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">PORTFOLIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
 
 
-    </section>
-
-
-    <section id="services">
+    <section id="service">
         <div class="container-fluid">
             <div class="container">
-                <h2>SERVICES</h2>
+                <h2 id="services">SERVICES</h2>
                 <hr>
                 <div class="row">
 
 
-                    <div class="col">
+                    <div class="col-12 col-md-3">
                         <img src="assets/img/coffee.png" alt="dessin de café" width="34" height="48">
                         <h3>COFFEE</h3>
                         <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
 
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-md-3">
                         <img src="assets/img/instant.png" alt="dessin de polaroid" width="48" height="48">
                         <h3>INSTANT</h3>
                         <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
 
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-md-3">
                         <img src="assets/img/serious.png" alt="dessin de café" width="48" height="48">
                         <h3>SERIOUS</h3>
                         <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
 
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-md-3">
                         <img src="assets/img/frame.png" alt="dessin de frame" width="47" height="45">
                         <h3>FRAME</h3>
                         <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
@@ -107,52 +108,58 @@
 
     </section>
     <section id="portfolio">
-        <div class="container-fluid">
+        <div class=container-fluid>
             <div class="container">
-                <h2>PORTFOLIO</h2>
-                <hr>
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h2 id="portofo">PORTFOLIO</h2>
+                        <hr>
+                    </div>
+                    <div id="myBtnContainer">
+                        <button class="btn active" onclick="filterSelection('all')">ALL</button>
+                        <button class="btn" onclick="filterSelection('panoramas')"> PANORAMAS</button>
+                        <button class="btn" onclick="filterSelection('portraits')">PORTRAITS</button>
+                        <button class="btn" onclick="filterSelection('macro')"> MACRO</button>
+                        <button class="btn" onclick="filterSelection('journal')">JOURNAL</button>
+                    </div>
+                </div>
                 <div class="row">
+                    <div class="col-12 col-sm-6 col-md-3 column panoramas">
+                        <img class="img-fluid" src="assets/img/p1.jpg" alt="dessin de café" width="270" height="270">
+
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 column macro">
+                        <img class="img-fluid" src="assets/img/p2.jpg" alt="dessin de polaroid" width="270" height="270">
 
 
-
-                    <div id="photos">
-                        <div class="col">
-                            <img class="img-fluid" src="assets/img/p1.jpg" alt="dessin de café" width="270" height="270">
-
-                        </div>
-                        <div class="col">
-                            <img class="img-fluid" src="assets/img/p2.jpg" alt="dessin de polaroid" width="270" height="270">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 column journal">
+                        <img class="img-fluid" src="assets/img/p3.jpg" alt="dessin de café" width="270" height="270">
 
 
-                        </div>
-                        <div class="col">
-                            <img class="img-fluid" src="assets/img/p3.jpg" alt="dessin de café" width="270" height="270">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 column portraits">
+                        <img class="img-fluid" src="assets/img/p4.jpg" alt="dessin de frame" width="270" height="270">
+
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3 column macro">
+                        <img class="img-fluid" src="assets/img/p5.jpg" alt="dessin de café" width="270" height="270">
+
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 column portraits">
+                        <img class="img-fluid" src="assets/img/p6.jpg" alt="dessin de polaroid" width="270" height="270">
 
 
-                        </div>
-                        <div class="col">
-                            <img class="img-fluid" src="assets/img/p4.jpg" alt="dessin de frame" width="270" height="270">
-
-                        </div>
-
-                        <div class="col">
-                            <img class="img-fluid" src="assets/img/p5.jpg" alt="dessin de café" width="270" height="270">
-
-                        </div>
-                        <div class="col">
-                            <img class="img-fluid" src="assets/img/p6.jpg" alt="dessin de polaroid" width="270" height="270">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 column journal">
+                        <img class="img-fluid" src="assets/img/p7.jpg" alt="dessin de café" width="270" height="270">
 
 
-                        </div>
-                        <div class="col">
-                            <img class="img-fluid" src="assets/img/p7.jpg" alt="dessin de café" width="270" height="270">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 column panoramas">
+                        <img class="img-fluid" src="assets/img/p8.jpg" alt="dessin de frame" width="270" height="270">
 
-
-                        </div>
-                        <div class="col">
-                            <img class="img-fluid" src="assets/img/p8.jpg" alt="dessin de frame" width="270" height="270">
-
-                        </div>
                     </div>
                 </div>
             </div>
@@ -162,14 +169,13 @@
     <section id="just">
         <div class="container-fluid">
             <div class="container">
-                <h2>JUST DEFAULT SECTION</h2>
+               <div id="log5">
+                        <div class="row">
+                        <div class="col-12 col-md-6">
+                <h2 id="features">JUST DEFAULT SECTION</h2>
                 <hr>
-                <div class="row">
-
-
-
-                    <div id="log">
-                        <div class="col-5">
+               
+                    
 
                             <p>Bear claw marzipan bear claw applicake I love muffin. Lemon drops gummi bears pastry gummi bears sesame snaps I love unerdwear.com. Soufflé cotton candy dessert candy ice cream wafer gummies cheesecake brownie.
 
@@ -181,11 +187,12 @@
 
                             <button type="button" class="btn btn-outline-dark">VISIT ME</button>
                         </div>
-                        <div class="col-1"></div>
-
-                        <div class="col-6">
-
-
+                        <div class="col-0"></div>
+                        <div class="col-12 col-md-6">
+                        
+                       <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/61056765?color=008cd0&byline=0&badge=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                            </div>
 
                         </div>
 
@@ -199,29 +206,29 @@
         <div class="container-fluid">
             <div class="container">
                 <div class="row">
-                    <div class="col-11">
+                    <div class="col-9 col-md-11" id="twi">
                         <h2>TWITTER</h2>
 
                         <hr>
                     </div>
-                    <div class="col-1 twit"><a class="nav-link" href="#"><i class="fab fa-twitter fa-2x"></i></a></div>
-                    <div class="row">
+                    <div class="col-3 col-md-1 twit"><a class="nav-link" href="#"><i class="fab fa-twitter fa-2x"></i></a></div>
 
 
 
 
-                        <div class="col-11">
 
-                            <p>Unerdwear cookie liquorice. Cake donut cupcake lollipop soufflé candy. Chocolate oat cake <b>@cheesecake</b> tootsie roll.
+                    <div class="col-12 col-md-11">
 
-                            </p>
-                        </div>
-                        <div class="col-1"></div>
+                        <p>Unerdwear cookie liquorice. Cake donut cupcake lollipop soufflé candy. Chocolate oat cake <b>@cheesecake</b> tootsie roll.
+
+                        </p>
                     </div>
-
+                    <div class="col-0 col-md-1"></div>
                 </div>
+
             </div>
         </div>
+
 
     </section>
     <section id="who">
@@ -235,7 +242,7 @@
 
 
 
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
 
                         <p>Bear claw marzipan bear claw applicake I love muffin. Lemon drops gummi bears pastry gummi bears sesame snaps I love unerdwear.com. Soufflé cotton candy dessert candy ice cream wafer gummies cheesecake brownie.
 
@@ -245,23 +252,23 @@
 
                         <p>Muffin chupa chups jelly beans sweet pie applicake. Croissant chocolate cake I love pudding. Ice cream I love powder pudding apple pie marshmallow. Cupcake marzipan oat cake bonbon I love candy canes toffee.</p>
                     </div>
-                    <div class="col-6">
-                       
+                    <div class="col-12 col-md-6">
+
                         <div>
                             <p>Pudding dessert jujubes tiramisu gingerbread croissant tiramisu applicake. Sesame snaps sugar plum cotton candy chocolate bonbon lemon drops candy canes cotton candy. Cake toffee pie bear claw pastry.</p>
                         </div>
-                        <div id="logos" >
-                            <a class="nav-link" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="nav-link" href="#"><i class="fab fa-google-plus-g"></i></a>
-                            <a class="nav-link" href="#"><i class="fas fa-coffee"></i></a>
-                            <a class="nav-link" href="#"><i class="fab fa-dribbble"></i></a>
-                        </div>
+                        <div id="logos">
+                            <a class="nav-link" href="#"><i class="fab fa-twitter" id="twitos"></i></a>
+                            <a class="nav-link" href="#"><i class="fab fa-google-plus-g" id="grand2"></i></a>
+                            <a class="nav-link" href="#"><i class="fas fa-coffee" id="grand"></i></a>
+                            <a class="nav-link" href="#"><i class="fab fa-dribbble" id="drib"></i></a>
                         </div>
                     </div>
                 </div>
-
             </div>
-   
+
+        </div>
+
 
 
     </section>
@@ -274,22 +281,114 @@
 
                         <hr>
                     </div>
-                    <div class="col-1 twit"><a class="nav-link" href="#"><i class="fas fa-quote-right-fax2"></i></a></div>
-                    
+                    <div class="col-1 twit"><i class="fas fa-quote-right"></i></div>
+
                 </div>
 
-                            <p>Applicake chocolate cake wafer toffee pie soufflé wafer. Tart marshmallow wafer macaroon cheesecake jelly. Gingerbread cookie soufflé sweet roll sweet roll jelly-o.                            </p>
-                       <p id="walt">Walter White
-                                                        </p>
+                <p>Applicake chocolate cake wafer toffee pie soufflé wafer. Tart marshmallow wafer macaroon cheesecake jelly. Gingerbread cookie soufflé sweet roll sweet roll jelly-o. </p>
+                <p id="walt">-Walter White
+                </p>
+            </div>
+            <div class="col-1"></div>
+        </div>
+
+
+    </section>
+
+    <section id="contact">
+        <div class="container-fluid">
+            <div class="container">
+                <h2 id="contac">CONTACT</h2>
+                <hr>
+
+                <div id="dessusc">
+                    <form id="formulaire">
+                        <div class="row">
+                            <div class="col-12 col-md-6" id="cont2">
+
+                                <fieldset>
+                                    <div class="form-group">
+                                        <label>FULL NAME</label>
+                                        <input type="text" class="form-control" id="InputNom">
+                                        <span id="missnom"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>EMAIL</label>
+                                        <input type="email" class="form-control" id="InputEmail">
+                                        <span id="missmail"></span>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="col-12 col-md-6" id="cont">
+                                <p>
+                                    Jujubes bear claw croissant wafer sweet lemon drops brownie chocolate bar. Sweet lollipop halvah tootsie roll cake fruitcake. Chocolate cake chocolate bar gingerbread lollipop tart. Jujubes bear claw donut chupa chups.
+                                </p>
+                                <ul>
+                                    <li>
+                                        Linda Newman</li>
+                                    <li>W325 State Road 123</li>
+                                    <li>Mondovi, WI(Wisconsin) 98746-54321</li>
+                                    <li>(715) 946 - 1234</li>
+
+                                </ul>
+
+                            </div>
                         </div>
-                        <div class="col-1"></div>
+                        <fieldset>
+                            <div class="form-group">
+                                <label for="message">MESSAGE</label>
+                                <textarea name="message" class="form-control" id="message" cols="30" rows="10"></textarea><span id="misscom"></span>
+                            </div>
+                        </fieldset>
+                        <button type="submit" class="btn btn-primary">MESSAGE</button>
+
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10" id="cop2">
+                        <nav id="bouge">
+                            <ul class="navig">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">HOME</a>
+                                </li>
+                                <li>|</li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#services">SERVICES</a>
+                                </li>
+                                <li>|</li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+                                </li>
+                                <li>|</li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">CONTACT</a>
+                                </li>
+
+                            </ul>
+
+                        </nav>
+                    </div>
+                    <div class="col-2" id="cop">
+
+                        <p>2013 &copy;</p>
                     </div>
 
-                
-    </section>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 
 
 </body>

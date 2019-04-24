@@ -22,7 +22,7 @@ body {
         font-size: 30px;
         color: white;
         font-family: "segl";
-        padding-top: 8%;
+
         margin-bottom: 0;
 
         @media screen and (max-width: 640px) {
@@ -49,7 +49,7 @@ body {
             height: 160px;
             padding: 0;
             padding-top: 40px;
-                z-index: 15;
+            z-index: 15;
 
             @media screen and (max-width: 640px) {
                 height: 80px;
@@ -59,6 +59,19 @@ body {
 
             }
 
+            @media (min-width: 640px) and (max-width: 767px) {
+                height: 100px;
+                padding-top: 10px;
+                background: rgba(0, 0, 0, 0.70);
+                color: #5bc6f2;
+
+            }
+
+            @media (min-width: 768px) and (max-width: 950px) {
+                height: 100px;
+                padding-top: 11px;
+            }
+
             button {
                 @media screen and (max-width: 640px) {
                     border: 2px solid #5bc6f2;
@@ -66,26 +79,33 @@ body {
                 }
             }
 
-
-
-
-
             span {
                 color: #5bc6f2;
                 font-family: "segb";
                 font-size: 30px;
 
+
                 @media screen and (max-width: 640px) {
-                    font-size: 18px;
+                    font-size: 24 px;
+                }
+
+                @media (min-width: 640px) and (max-width: 767px) {
+                    font-size: 24px;
                 }
             }
-
 
             .nav-link:hover {
                 border: 2px solid #5bc6f2;
                 padding: 11px 18px;
                 color: #5bc6f2;
 
+                @media screen and (max-width: 640px) {
+                    padding: 11px 11px;
+                }
+
+                @media (min-width: 640px) and (max-width: 767px) {
+                    padding: 11px 11px;
+                }
             }
 
             .nav-link {
@@ -94,6 +114,14 @@ body {
                 color: white;
                 padding: 11px 18px;
                 border: 2px solid transparent;
+
+                @media screen and (max-width: 640px) {
+                    padding: 11px 11px;
+                }
+
+                @media (min-width: 640px) and (max-width: 767px) {
+                    padding: 11px 11px;
+                }
             }
 
             .navbar-brand {
@@ -102,11 +130,15 @@ body {
                 color: white;
 
                 @media screen and (max-width: 640px) {
-                    font-size: 18px;
+                    font-size: 30px;
+                }
+
+                @media (min-width: 640px) and (max-width: 767px) {
+                    font-size: 28px;
                 }
             }
-        }
 
+        }
 
         h1 {
             text-transform: uppercase;
@@ -120,7 +152,7 @@ body {
                 font-size: 16px;
                 display: flex;
                 flex-direction: column;
-                margin-top: 20%;
+                margin-top: 12%;
 
             }
 
@@ -153,7 +185,7 @@ body {
 
             @media screen and (max-width: 640px) {
                 height: 400px;
-                padding: 0;
+                padding: 0 15px;
                 padding-top: 80px;
 
             }
@@ -162,11 +194,25 @@ body {
                 height: 600px;
 
             }
-
-
-
         }
 
+        ul {
+            @media screen and (max-width: 640px) {
+                float: right;
+                background: rgba(0, 0, 0, 0.50);
+                background-repeat: no-repeat;
+                padding-right: 0;
+                text-align: right;
+            }
+
+            @media (min-width: 640px) and (max-width: 767px) {
+                float: right;
+                background: rgba(0, 0, 0, 0.50);
+                background-repeat: no-repeat;
+                padding-right: 0;
+                text-align: right;
+            }
+        }
 
         #titre {
 
@@ -185,25 +231,23 @@ body {
                 margin-top: 20px;
                 font-weight: 300;
 
-
                 @media screen and (max-width: 640px) {
                     border-radius: 0;
-                    font-size: 16px;
+                    font-size: 24px;
                     margin-top: 20px;
-                    background-color: transparent;
-
+                    white-space: normal;
 
                 }
 
                 @media (min-width: 640px) and (max-width: 767px) {
                     border-radius: 0;
-                    font-size: 24px;
+                    font-size: 28px;
                     margin-top: 20px;
+                    white-space: normal;
                 }
 
                 @media (min-width: 768px) and (max-width: 950px) {
-
-                    font-size: 30px;
+                    font-size: 28px;
 
                 }
 
@@ -216,7 +260,7 @@ body {
 
     /*      *********services****************      */
 
-    #services {
+    #service {
 
         color: white;
 
@@ -226,7 +270,7 @@ body {
             background-repeat: no-repeat;
             min-height: 405px;
             width: 100%;
-            padding: 0;
+            padding: 6% 0;
 
         }
 
@@ -239,11 +283,15 @@ body {
 
             @media screen and (max-width: 640px) {
                 font-size: 14px;
-
+                padding-top: 3%;
+                padding-bottom: 3%;
             }
 
             @media (min-width: 640px) and (max-width: 767px) {
                 font-size: 18px;
+                padding-top: 3%;
+                padding-bottom: 3%;
+
 
             }
         }
@@ -281,54 +329,97 @@ body {
     #portfolio {
 
         .container-fluid {
-          width: 100%;
+            width: 100%;
+            padding: 3% 0;
+            min-height: 500px;
 
         }
 
-        .nav-link:hover {
-            border: 2px solid #5bc6f2;
-            padding: 11px 18px;
-            color: #5bc6f2;
-
-        }
-
-        .nav-link {
-            font-family: "segb";
-            font-size: 14px;
-            color: #353f46;
-            padding: 11px 18px;
-            border: 2px solid transparent;
-        }
-
-        .navbar-brand {
-            font-family: "segb";
-            font-size: 30px;
-            color:#353f46;
-
+        .d-flex {
             @media screen and (max-width: 640px) {
-                font-size: 18px;
+                display: flex;
+                flex-direction: column;
             }
         }
 
-        #photos {
-            display: flex;
-            flex-direction: row;
+        .btn {
+            font-family: "segb";
+            font-size: 14px;
+            color: #353f46;
+            cursor: pointer;
+            border-radius: 0;
+            border: 2px solid transparent;
+
+
+            @media screen and (max-width: 640px) {
+                font-size: 10px;
+                padding: 6px 2px 6px 2px;
+            }
+
+            @media (min-width: 640px) and (max-width: 767px) {
+                font-size: 12px;
+                padding: 6px 2px 6px 2px;
+
+            }
+        }
+
+        .btn:hover {
+            color: #5bc6f2;
+            border: 2px solid #5bc6f2;
+
+            @media screen and (max-width: 640px) {
+                font-size: 10px;
+                padding: 6px 2px 6px 2px;
+                border: 1px solid #5bc6f2;
+                transition: none;
+
+
+            }
         }
 
         h2 {
             color: black;
-
         }
 
         hr {
-
             width: 30%;
             border: 1.2px solid #353f46;
             margin-right: 70%;
             margin-top: 3px;
             margin-bottom: 5%;
+        }
 
+        .img-fluid {
+            width: 100%;
+        }
 
+        
+
+        .row {
+            margin: 8px -16px;
+        }
+
+        .show {
+            display: block !important;
+        }
+
+        .column {
+            float: left;
+            display: none;
+            cursor: crosshair;
+            caret-color: black;
+            /* Hide all elements by default */
+        }
+
+        .row,
+        .row > .column {
+            padding: 8px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
         }
     }
 
@@ -337,13 +428,10 @@ body {
 
         .container-fluid {
             background-color: #515f67;
-            height: 500px;
-            width: 100%;
-            padding: 0;
 
-            @media screen and (max-width: 640px) {
-                height: 465px;
-            }
+            width: 100%;
+            padding: 6% 0;
+
 
         }
 
@@ -357,10 +445,22 @@ body {
                 font-size: 12px;
 
             }
+        }
 
+        #log5 {
+            display: flex;
+            flex-direction: row;
 
+            @media screen and (max-width: 640px) {
+                display: flex;
+                flex-direction: column;
+            }
 
+            @media (min-width: 640px) and (max-width: 767px) {
+                display: flex;
+                flex-direction: column;
 
+            }
         }
 
         button {
@@ -371,6 +471,7 @@ body {
             color: #353f46;
             border: 2px solid #353f46;
             margin-top: 5%;
+            margin-bottom: 5%;
 
             @media screen and (max-width: 640px) {
                 border-radius: 0;
@@ -395,9 +496,9 @@ body {
             margin-right: 96%;
             margin-top: 3px;
             margin-bottom: 4%;
-
-
         }
+
+
     }
 
     /*   ******  twitter    ******* */
@@ -407,11 +508,12 @@ body {
             background-color: #5bc6f2;
             background-image: cover;
             background-repeat: no-repeat;
-            height: 305px;
+            max-height: 305px;
             width: 100%;
+            padding: 4% 0 15% 0;
 
             @media screen and (max-width: 640px) {
-                height: 160px;
+                height: 200px;
             }
 
         }
@@ -438,6 +540,10 @@ body {
             margin-bottom: 4%;
             margin-left: 1.5%;
 
+            @media screen and (max-width: 640px) {
+                padding-left: 4.5%;
+                margin-left: 6.5%;
+            }
 
         }
 
@@ -445,8 +551,12 @@ body {
             color: white;
         }
 
+        a:hover {
+            color: #515f67;
+        }
+
         .twit {
-            padding-top: 6.8%;
+            padding-top: 0;
 
             @media screen and (max-width: 640px) {
                 padding-top: 1.5%;
@@ -456,6 +566,12 @@ body {
 
         h2 {
             margin-left: 1.5%;
+
+            @media screen and (max-width: 640px) {
+                padding-left: 4.5%;
+
+            }
+
         }
     }
 
@@ -467,8 +583,9 @@ body {
             background-position: center;
             background-image: cover;
             background-repeat: no-repeat;
-            height: 505px;
+            max-height: 505px;
             width: 100%;
+            padding: 4% 0 4% 0;
 
             @media screen and (max-width: 640px) {
                 height: 400px;
@@ -534,7 +651,7 @@ body {
 
             @media screen and (max-width: 640px) {
                 padding: 18%;
-                margin-left: 45%;
+                margin-left: 40%;
 
             }
 
@@ -560,7 +677,7 @@ body {
 
             @media screen and (max-width: 640px) {
                 padding: 20%;
-                margin-left: 45%;
+                margin-left: 40%;
 
             }
 
@@ -611,7 +728,7 @@ body {
 
             @media screen and (max-width: 640px) {
                 padding: 18%;
-                margin-left: 45%;
+                margin-left: 40%;
 
             }
 
@@ -649,7 +766,7 @@ body {
 
 
             width: 100%;
-            padding: 0;
+            padding: 6% 0;
 
             @media (min-width: 768px) and (max-width: 950px) {
 
@@ -718,7 +835,7 @@ body {
             background-position: center;
             max-height: 814px;
             width: 100%;
-            padding: 0;
+            padding: 6% 0;
 
             @media screen and (max-width: 640px) {
                 padding-bottom: 15%;
@@ -732,13 +849,28 @@ body {
 
         }
 
+        .row {
+            @media screen and (max-width: 640px) {
+                display: flex;
+                flex-wrap: wrap-reverse;
+            }
+
+        }
+
         #cont {
+            padding-top: 1%;
+
             @media screen and (max-width: 640px) {
                 margin-bottom: 20px;
             }
         }
 
+        li {
+            text-decoration: none;
+        }
+
         ul {
+            padding: 6% 0;
             list-style: none;
             font-family: "seg";
             font-size: 14px;
@@ -766,16 +898,36 @@ body {
 
         }
 
+        form {
+            color: black;
+            font-family: "seg";
+            font-size: 18px;
+
+        }
+
+        form:hover {
+            transition: none;
+
+        }
+
         input {
             border: 1px solid white;
             background-color: transparent;
             border-radius: 0;
+            color: black;
+            font-family: "seg";
+            font-size: 14px;
+
         }
 
         textarea {
             border: 1px solid white;
             background-color: transparent;
             border-radius: 0;
+            color: black;
+            font-family: "seg";
+            font-size: 14px;
+
         }
 
         p {
@@ -896,10 +1048,11 @@ body {
                 font-family: "seg";
                 font-size: 14px;
                 margin: 0;
-                padding-top: 20px;
+                padding-top: 45px;
 
                 @media screen and (max-width: 640px) {
                     font-size: 12px;
+                    padding-top: 20px;
 
                 }
 
